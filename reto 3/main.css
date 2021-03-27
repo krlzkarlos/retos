@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100%;
-}
 header {
   background-color: #ffaead;
 }
@@ -110,19 +107,16 @@ aside {
 
 footer {
   background-color: #a6c4f8;
-}
-
-footer {
-  height: 30vh;
+  height: 120px;
 }
 
 .contacto_main {
-  padding-top: 50px;
+  padding-top: 30px;
   text-align: center;
 }
 
 .contacto_main p,
 a,
 address {
-  font-size: 25px;
+  font-size: 15px;
 }
