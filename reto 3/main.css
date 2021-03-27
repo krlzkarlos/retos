@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+header {
+  background-color: #ffaead;
+}
+.subtitulopagina,
+.titulopagina {
+  text-align: center;
+}
+nav {
+  background-color: #ffebac;
+  height: 80px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+ul li a {
+  padding-left: 15px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+}
+
+img {
+  border-radius: 5px;
+}
+#conocenos {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.article-one {
+  background-color: #fdc9ef;
+  display: inline-block;
+  height: 572px;
+  width: 50%;
+}
+.article-one section {
+  background-color: #8ed8d9;
+}
+
+.article-one-section1,
+.article-one-section2 {
+  padding: 20px;
+  padding-top: 60px;
+  border-radius: 20px;
+  box-shadow: 3px 3px;
+}
+
+.article-one-section1,
+.article-one-section2 {
+  width: 500px;
+  height: 200px;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.section-clientes {
+  margin: 20px;
+}
+
+.section1-conten {
+  display: flex;
+}
+
+.section1-conten p {
+  padding: 10px;
+}
+
+.section-clientes .logros {
+  margin-top: 30px;
+}
+
+.section-clientes .portafolios {
+  margin-top: 50px;
+}
+
+#clientes {
+  text-align: center;
+}
+
+.lista-portafolio {
+  padding-top: 50px;
+  text-align: center;
+  display: block;
+}
+aside {
+  background-color: #a8faa8;
+  width: 50%;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #a6c4f8;
+}
+
+footer {
+  height: 30vh;
+}
+
+.contacto_main {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.contacto_main p,
+a,
+address {
+  font-size: 25px;
+}
