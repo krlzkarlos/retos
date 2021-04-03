@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!-- opcion 1 -->
+      <section class="option1section">
+        <form class="option1" action="">
+          <h3>CREATE YOUR ACCOUNT</h3>
+          <p>This is step 1</p>
+          <input
+            class="option1inpunt"
+            type="email"
+            required
+            placeholder="Email"
+            [A-Z
+            a-z
+            0-9]{1,}@[A-Z
+            a-z
+            0-9]{1,}.[A-Z
+            a-z]{2,}
+          />
+          <input
+            class="option1inpunt"
+            required
+            type="password"
+            placeholder="Password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+          />
+          <input
+            class="option1inpunt"
+            type="password"
+            placeholder="Confirm Password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+            required
+          />
+          <button class="option1button">Next</button>
+        </form>
+      </section>
+      <!-- opcion 2 -->
+      <section class="option2section">
+        <form class="option2" action="">
+          <h3>Sing UP</h3>
+          <label for="">First name </label>
+          <input type="text" maxlength="6" required pattern="[A-Z a-z]+" />
+          <label for="">Age</label>
+          <input type="number" max="120" required />
+          <label for="">Income</label>
+          <input type="number" required />
+          <label for="">More Info</label>
+          <textarea name="" id="" cols="30" rows="0" required></textarea>
+          <label for="">Gender</label>
+          <input
+            class="gender"
+            type="radio"
+            name="gender"
+            value="M"
+            required
+          />Male
+          <input
+            class="gender"
+            type="radio"
+            name="gender"
+            value="F"
+            required
+          />Female
+          <input
+            class="gender"
+            type="radio"
+            name="gender"
+            value="T"
+            required
+          />Trans
+          <select name="plan" id="" required>
+            <option value="" selected disabled>Select Plan</option>
+            <option value="">plan 1</option>
+            <option value="">plan 2</option>
+          </select>
+          <br />
+          <input
+            class="checkbox"
+            type="checkbox"
+            name=""
+            id=""
+            required
+          />Subscribe to Newsletter
+          <button class="option2button">Update</button>
+        </form>
+      </section>
+      <!-- opcion 3 -->
+      <section>
+        <form action="">
+          <h3>Contact Form</h3>
+          <label for="">First Name</label>
+          <input
+            type="text"
+            placeholder="John"
+            required
+            maxlength="6"
+            pattern="[A-Z a-z]+"
+          />
+          <label for="">Last Name</label>
+          <input
+            type="text"
+            placeholder="Doe"
+            required
+            maxlength="6"
+            pattern="[A-Z a-z]+"
+          />
+          <label for="">Email</label>
+          <input
+            type="email"
+            placeholder="you@domain.com"
+            required
+            pattern="[A-Z a-z 0-9]{1,}@[A-Z a-z 0-9]{1,}.[A-Z a-z]{2,}"
+          />
+          <label for="">Message</label>
+          <textarea
+            name="Message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Enter youur message here..."
+            required
+            maxlength="140"
+            minlength="20"
+          ></textarea>
+          <button>Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
