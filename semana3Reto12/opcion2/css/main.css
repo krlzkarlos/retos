@@ -8,7 +8,16 @@
   display: flex;
   height: 50px;
   align-items: center;
+  width: 100%;
 }
+.icon-menu {
+  width: 50px;
+  height: 50px;
+}
+#btn-menu {
+  display: none;
+}
+
 .menu-hamburguesa {
   width: 50px;
   height: 20px;
@@ -23,10 +32,20 @@ ul {
 ul li {
   list-style: none;
 }
+li {
+  width: 200px;
+  height: 20px;
+  text-align: center;
+}
 
 li a {
   text-decoration: none;
   color: white;
+  transition: all 500ms ease;
+}
+
+li:hover {
+  background-color: rgba(8, 40, 221, 0.392);
 }
 h2 {
   text-align: center;
@@ -108,24 +127,19 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
-  .menu-hamburguesa {
-    display: block;
-    margin-top: 10px;
-    margin-right: 400px;
+  ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
   }
 
+  li {
+    margin-bottom: 15px;
+    font-size: 20px;
+    max-width: 100px;
+    border-bottom: 1px solid white;
+  }
   .container-header {
-    flex-direction: column;
-  }
-
-  .header-menu {
-    position: absolute;
-    background: #234354;
-    margin-top: -100%;
-    transition: all 500ms ease;
-  }
-
-  .menu ul {
-    flex-direction: column;
+    height: 100px;
   }
 }
