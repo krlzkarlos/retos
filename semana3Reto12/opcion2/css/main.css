@@ -1,0 +1,131 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container-header {
+  background-color: #36009c;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.menu-hamburguesa {
+  width: 50px;
+  height: 20px;
+  padding-left: 20px;
+  display: none;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+ul li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding-top: 20px;
+  color: #626262;
+  font-weight: 400;
+}
+.image-one {
+  width: 250px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+
+.one-product {
+  width: 250px;
+  /* padding: 40px; */
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+}
+
+.product-status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-status button {
+  font-size: 15px;
+  border-radius: 5px;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+}
+
+.button-cart {
+  background-color: #009999;
+  width: 250px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.button-cart button {
+  margin-right: 60px;
+  margin-bottom: 35px;
+  background-color: #009999;
+  color: white;
+}
+
+.check {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 35px;
+}
+
+.one-product span,
+.one-product h3,
+.one-product div,
+.one-product p {
+  padding-top: 35px;
+}
+
+.product-status {
+  padding-bottom: 10px;
+}
+
+.container-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1370px) {
+  .container-product {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-hamburguesa {
+    display: block;
+    margin-top: 10px;
+    margin-right: 400px;
+  }
+
+  .container-header {
+    flex-direction: column;
+  }
+
+  .header-menu {
+    position: absolute;
+    background: #234354;
+    margin-top: -100%;
+    transition: all 500ms ease;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+}
