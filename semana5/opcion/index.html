@@ -7,6 +7,38 @@
     <title>Retos</title>
   </head>
   <body>
+    <style>
+      body {
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(121, 9, 85, 1) 100%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        width: 100%;
+        text-align: center;
+      }
+
+      img {
+        padding: 20px;
+        animation: animacionpage 1s ease-out normal backwards;
+        transition: all 250ms;
+      }
+
+      @keyframes animacionpage {
+        0% {
+          transform: scale(0);
+        }
+
+        70% {
+          transform: scale(1.04);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <img src="optionOne.png" alt="" />
     <script src="optionOne.js"></script>
   </body>
 </html>
