@@ -1,0 +1,46 @@
+.navbar-color {
+  background-color: #2c3e52 !important;
+}
+
+.navbar-color a {
+  color: white !important;
+}
+
+.carousel-inner img {
+  /* object-fit: cover; */
+  background-size: cover;
+  height: 70vh;
+  filter: blur(10px);
+}
+
+.carousel-caption {
+  height: 40vh !important;
+}
+
+#text-sub {
+  font-family: "Girassol", cursive;
+  font-size: 3.2rem;
+}
+
+.card img {
+  height: 30vh;
+}
+
+#about {
+  background-color: #1cbb9b;
+}
+
+.text-about {
+  color: white !important;
+}
+
+.btn-about {
+  border-color: white !important;
+  color: white;
+  margin: 0 auto !important;
+}
+
+#footer {
+  background: #2d3e52;
+  color: white;
+}
